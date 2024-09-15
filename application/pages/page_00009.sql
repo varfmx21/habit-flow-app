@@ -1,0 +1,119 @@
+prompt --application/pages/page_00009
+begin
+--   Manifest
+--     PAGE: 00009
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.3'
+,p_default_workspace_id=>20
+,p_default_application_id=>7880
+,p_default_id_offset=>38723140449903817775
+,p_default_owner=>'ORACLE'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>9
+,p_name=>'Habits'
+,p_alias=>'HABITS1'
+,p_step_title=>'Habits'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_overwrite_navigation_list=>'Y'
+,p_navigation_list_position=>'TOP'
+,p_navigation_list_id=>wwv_flow_imp.id(1323649955639702131)
+,p_navigation_list_template_id=>wwv_flow_imp.id(29206514315657898)
+,p_nav_list_template_options=>'#DEFAULT#:t-NavTabs--inlineLabels-lg:t-NavTabs--displayLabels-sm'
+,p_protection_level=>'C'
+,p_page_component_map=>'23'
+,p_created_on=>wwv_flow_imp.dz('20240915075541Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20240915131509Z')
+,p_created_by=>'JRVMZO1@GMAIL.COM'
+,p_last_updated_by=>'JRVMZO1@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(132274795221485812)
+,p_plug_name=>'Habits'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(691447129098361706)
+,p_plug_display_sequence=>40
+,p_plug_new_grid_row=>false
+,p_plug_new_grid_column=>false
+,p_query_type=>'TABLE'
+,p_query_table=>'HABITS'
+,p_include_rowid_column=>false
+,p_lazy_loading=>false
+,p_plug_source_type=>'NATIVE_CARDS'
+,p_plug_query_num_rows_type=>'SCROLL'
+,p_show_total_row_count=>false
+,p_pagination_display_position=>'BOTTOM_RIGHT'
+,p_landmark_type=>'main'
+,p_created_on=>wwv_flow_imp.dz('20240915075541Z')
+,p_updated_on=>wwv_flow_imp.dz('20240915131447Z')
+,p_created_by=>'JRVMZO1@GMAIL.COM'
+,p_updated_by=>'JRVMZO1@GMAIL.COM'
+);
+wwv_flow_imp_page.create_card(
+ p_id=>wwv_flow_imp.id(132275256324485814)
+,p_region_id=>wwv_flow_imp.id(132274795221485812)
+,p_layout_type=>'GRID'
+,p_title_adv_formatting=>false
+,p_title_column_name=>'HABITNAME'
+,p_sub_title_adv_formatting=>false
+,p_body_adv_formatting=>false
+,p_body_column_name=>'DESCRIPTION'
+,p_second_body_adv_formatting=>false
+,p_media_adv_formatting=>false
+,p_updated_on=>wwv_flow_imp.dz('20240915090534Z')
+,p_updated_by=>'JRVMZO1@GMAIL.COM'
+);
+wwv_flow_imp_page.create_card_action(
+ p_id=>wwv_flow_imp.id(129536914805698052)
+,p_card_id=>wwv_flow_imp.id(132275256324485814)
+,p_action_type=>'FULL_CARD'
+,p_display_sequence=>10
+,p_link_target_type=>'REDIRECT_PAGE'
+,p_link_target=>'f?p=&APP_ID.:10:&SESSION.::&DEBUG.:::'
+,p_updated_on=>wwv_flow_imp.dz('20240915090534Z')
+,p_updated_by=>'JRVMZO1@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(41771220090837155397)
+,p_plug_name=>'REWARDS'
+,p_title=>'REWARDS'
+,p_icon_css_classes=>'fa-ai-innovation-lightbulb'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(1323669904974702162)
+,p_plug_display_sequence=>40
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_location=>null
+,p_menu_id=>wwv_flow_imp.id(1323695202805702255)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>wwv_flow_imp.id(1323688290348702186)
+,p_ai_enabled=>false
+,p_created_on=>wwv_flow_imp.dz('20240915115722Z')
+,p_updated_on=>wwv_flow_imp.dz('20240915115722Z')
+,p_created_by=>'JRVMZO1@GMAIL.COM'
+,p_updated_by=>'JRVMZO1@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(170117189837737641)
+,p_button_sequence=>20
+,p_button_name=>'Create'
+,p_button_action=>'REDIRECT_PAGE'
+,p_button_template_options=>'#DEFAULT#:t-Button--large:t-Button--primary:t-Button--iconLeft'
+,p_button_template_id=>wwv_flow_imp.id(1323687911120702185)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Create'
+,p_button_redirect_url=>'f?p=&APP_ID.:10:&SESSION.::&DEBUG.:::'
+,p_icon_css_classes=>'fa-plus-circle'
+,p_grid_new_row=>'Y'
+,p_database_action=>'INSERT'
+,p_created_on=>wwv_flow_imp.dz('20240915114851Z')
+,p_updated_on=>wwv_flow_imp.dz('20240915131448Z')
+,p_created_by=>'JRVMZO1@GMAIL.COM'
+,p_updated_by=>'JRVMZO1@GMAIL.COM'
+);
+wwv_flow_imp.component_end;
+end;
+/

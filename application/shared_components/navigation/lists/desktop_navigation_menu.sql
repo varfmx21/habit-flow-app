@@ -1,0 +1,130 @@
+prompt --application/shared_components/navigation/lists/desktop_navigation_menu
+begin
+--   Manifest
+--     LIST: Desktop Navigation Menu
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.3'
+,p_default_workspace_id=>20
+,p_default_application_id=>7880
+,p_default_id_offset=>38723140449903817775
+,p_default_owner=>'ORACLE'
+);
+wwv_flow_imp_shared.create_list(
+ p_id=>wwv_flow_imp.id(1323649955639702131)
+,p_name=>'Desktop Navigation Menu'
+,p_list_status=>'PUBLIC'
+,p_version_scn=>15569861863832
+,p_updated_on=>wwv_flow_imp.dz('20240915133815Z')
+,p_updated_by=>'A01540618@TEC.MX'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(201419788044541164)
+,p_list_item_display_sequence=>1
+,p_list_item_link_text=>'Install App'
+,p_list_item_link_target=>'#action$a-pwa-install'
+,p_list_item_icon=>'fa-cloud-download'
+,p_list_text_02=>'a-pwaInstall'
+,p_list_item_current_type=>'NEVER'
+,p_created_on=>wwv_flow_imp.dz('20240915133815Z')
+,p_updated_on=>wwv_flow_imp.dz('20240915133815Z')
+,p_created_by=>'A01540618@TEC.MX'
+,p_updated_by=>'A01540618@TEC.MX'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1323695235932702258)
+,p_list_item_display_sequence=>10
+,p_list_item_link_text=>'Home'
+,p_list_item_link_target=>'f?p=&APP_ID.:1:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-home'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'1,23'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(714577637339238687)
+,p_list_item_display_sequence=>12
+,p_list_item_link_text=>'Calendar'
+,p_list_item_link_target=>'f?p=&APP_ID.:38:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-calendar'
+,p_list_item_current_type=>'TARGET_PAGE'
+,p_updated_on=>wwv_flow_imp.dz('20240915060456Z')
+,p_updated_by=>'MARIO2109'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(698968478465245767)
+,p_list_item_display_sequence=>110
+,p_list_item_link_text=>'Traditional (Total Rows)'
+,p_list_item_link_target=>'f?p=&APP_ID.:12:&SESSION.::&DEBUG.::::'
+,p_parent_list_item_id=>wwv_flow_imp.id(714577637339238687)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'12'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(1517723952353424552)
+,p_list_item_display_sequence=>145
+,p_list_item_link_text=>'Progressive Scroll'
+,p_list_item_link_target=>'f?p=&APP_ID.:2:&SESSION.::&DEBUG.::::'
+,p_parent_list_item_id=>wwv_flow_imp.id(714577637339238687)
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'2'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(714577937392242332)
+,p_list_item_display_sequence=>13
+,p_list_item_link_text=>'Stadistics'
+,p_list_item_link_target=>'f?p=&APP_ID.:39:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-bar-chart'
+,p_list_item_current_type=>'TARGET_PAGE'
+,p_updated_on=>wwv_flow_imp.dz('20240915095439Z')
+,p_updated_by=>'MARIO2109'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(714578282843245904)
+,p_list_item_display_sequence=>14
+,p_list_item_link_text=>'Rewards'
+,p_list_item_link_target=>'f?p=&APP_ID.:40:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-rocket'
+,p_list_item_current_type=>'TARGET_PAGE'
+,p_updated_on=>wwv_flow_imp.dz('20240914214634Z')
+,p_updated_by=>'A01540618@TEC.MX'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(132863494244822267)
+,p_list_item_display_sequence=>16
+,p_list_item_link_text=>'Edit habit'
+,p_list_item_link_target=>'f?p=&APP_ID.:9:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-forms'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'10'
+,p_created_on=>wwv_flow_imp.dz('20240915080128Z')
+,p_updated_on=>wwv_flow_imp.dz('20240915110738Z')
+,p_created_by=>'JRVMZO1@GMAIL.COM'
+,p_updated_by=>'MARIO2109'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(714578941632256869)
+,p_list_item_display_sequence=>20
+,p_list_item_link_text=>'Settings'
+,p_list_item_link_target=>'f?p=&APP_ID.:20000:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-gear'
+,p_list_item_current_type=>'TARGET_PAGE'
+,p_updated_on=>wwv_flow_imp.dz('20240915115131Z')
+,p_updated_by=>'MARIO2109'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(200273596345772058)
+,p_list_item_display_sequence=>155
+,p_list_item_link_text=>'Notificacions'
+,p_list_item_link_target=>'f?p=&APP_ID.:18:&APP_SESSION.::&DEBUG.:::'
+,p_list_item_icon=>'fa-file-o'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'18'
+,p_created_on=>wwv_flow_imp.dz('20240915132626Z')
+,p_updated_on=>wwv_flow_imp.dz('20240915132626Z')
+,p_created_by=>'A01540618@TEC.MX'
+,p_updated_by=>'A01540618@TEC.MX'
+);
+wwv_flow_imp.component_end;
+end;
+/
